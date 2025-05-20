@@ -10,10 +10,8 @@ import UserIcon from './UserIcon';
 export default async function Header() {
     const user: UserRead | undefined = await getCurrentUser();
 
-    console.log("Header | user:", user);
-
     return (
-        <nav className="bg-header-background text-header-text p-2 flex items-center justify-between min-h-14 w-full">
+        <nav className="bg-header-background text-header-text p-2 flex items-center justify-between min-h-14 w-full fixed z-30">
             <div>
                 {user?.scope === "admin" ? <MenuButton position='header' /> : <Logo />}
             </div>
