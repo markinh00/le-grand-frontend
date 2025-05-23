@@ -8,7 +8,7 @@ export function IconButton({ children, className, ...props }: Props) {
         <Button
             variant="ghost"
             size="icon"
-            className={`hover:bg-primary/20 size-7 ${className ?? ''}`}
+            className={`hover:bg-primary/20 size-8 ${className ?? ''}`}
             {...props}
         >
             {children}

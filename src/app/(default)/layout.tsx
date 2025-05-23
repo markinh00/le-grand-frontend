@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Header from "@/components/shared/Header";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/shared/AppSidebar";
+import { CartProvider } from "@/contexts/CartContext";
 
 
 export const metadata: Metadata = {
@@ -12,11 +13,13 @@ export const metadata: Metadata = {
 export default function Layout({ children }: Readonly<{ children: React.ReactNode }>) {
     return (
         <SidebarProvider defaultOpen={false}>
-            <AppSidebar />
-            <main className="w-full bg-page-background">
-                <Header />
-                {children}
-            </main>
+            <CartProvider>
+                <AppSidebar />
+                <main className="flex-1 bg-page-background relative">
+                    <Header />
+                    {children}
+                </main>
+            </CartProvider>
         </SidebarProvider>
     );
 }
