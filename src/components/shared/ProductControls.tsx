@@ -55,8 +55,6 @@ export default function ProductControls({ product }: Props) {
         <div className="flex items-center">
             <ProductControlsButton type="minus" onclick={() => subtractFromQuantity(1)} />
             <input
-                id={`product${product.id}`}
-                name={`product${product.id}`}
                 type="number"
                 max={99}
                 min={0}
