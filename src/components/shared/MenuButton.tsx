@@ -26,4 +26,12 @@ export default function MenuButton({ position }: Props) {
                 <Logo />
             </div>
         )
+
+    if (position === "sidebar" && (!open && isMobile))
+        return (
+            <div className='flex items-center text-header-text'>
+                <SidebarTrigger className='mr-2' />
+                <Logo />
+            </div>
+        )
 }

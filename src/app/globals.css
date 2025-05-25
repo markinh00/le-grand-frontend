@@ -3,6 +3,10 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+	--breakpoint-xs: 30rem;
+}
+
 @theme inline {
 	--color-header-background: var(--header-background);
 	--color-header-text: var(--header-text);

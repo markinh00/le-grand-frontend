@@ -15,7 +15,7 @@ export default function ProductItem(props: Props) {
 
     return (
         <Dialog>
-            <div className="flex max-h-[116px] bg-card-background border shadow-sm" key={product.id}>
+            <div className="flex max-h-[116px] bg-card-background rounded-xl border shadow-sm" key={product.id}>
                 <DialogTrigger asChild>
                     <div className="relative w-[116px] h-[116px]">
                         <Image
@@ -24,8 +24,8 @@ export default function ProductItem(props: Props) {
                             src={product.img_url}
                             alt={product.name}
                             fill
-                            sizes="(max-width: 768px) 100px, 116px"
-                            className="object-cover"
+                            sizes="(max-width: 768px) 116px, 116px"
+                            className="object-cover rounded-l-xl"
                         />
                     </div>
                 </DialogTrigger>

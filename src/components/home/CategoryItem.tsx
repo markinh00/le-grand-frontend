@@ -23,8 +23,8 @@ export default function CategoryItem(props: Props) {
             key={props.category}
             className="w-full mb-4 last:mb-14 md:last:mb-0"
         >
-            <CollapsibleTrigger asChild className="mb-2">
-                <div className="w-full flex justify-between p-2 hover:cursor-pointer hover:bg-primary/5">
+            <CollapsibleTrigger asChild className="mb-4">
+                <div className="w-full flex items-center justify-between p-2 hover:cursor-pointer hover:bg-primary/5 rounded-xl">
                     <h2 className="font-bold mr-2">{props.category}</h2>
 
                     <IconButton className="ml-2">

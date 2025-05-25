@@ -5,9 +5,6 @@ import { UserRead } from '@/types/user';
 import getCurrentUser from '@/actions/user/getCurrentUser';
 import Logo from './Logo';
 import UserIcon from './UserIcon';
-import { IconButton } from './IconButton';
-import { IoCartOutline } from 'react-icons/io5';
-import CartIcon from '../home/CartIcon';
 
 
 export default async function Header() {
@@ -22,7 +19,6 @@ export default async function Header() {
             </div>
 
             <div>
-                <CartIcon />
                 {user ? (
                     <UserIcon user={user} />
                 ) : (
