@@ -9,7 +9,7 @@ type Props = {
 
 export default function ProductList(props: Props) {
     return (
-        <CollapsibleContent className="grid [grid-template-columns:repeat(auto-fit,minmax(300px,1fr))] gap-4">
+        <CollapsibleContent className="grid [grid-template-columns:repeat(auto-fit,minmax(280px,1fr))] gap-4">
             {props.products.map(product => {
                 return (
                     <ProductItem key={product.id} product={product} />

@@ -21,7 +21,7 @@ export default function CategoryItem(props: Props) {
             open={isOpen}
             onOpenChange={setIsOpen}
             key={props.category}
-            className="w-full mb-4 last:mb-14 md:last:mb-0"
+            className="w-full"
         >
             <CollapsibleTrigger asChild className="mb-4">
                 <div className="w-full flex items-center justify-between p-2 hover:cursor-pointer hover:bg-primary/5 rounded-xl">

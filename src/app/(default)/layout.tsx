@@ -15,7 +15,7 @@ export default function Layout({ children }: Readonly<{ children: React.ReactNod
         <SidebarProvider defaultOpen={false}>
             <CartProvider>
                 <AppSidebar />
-                <main className="flex-1 bg-page-background relative">
+                <main className="flex-1 bg-page-background relative overflow-hidden">
                     <Header />
                     {children}
                 </main>

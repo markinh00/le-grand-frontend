@@ -12,7 +12,7 @@ export default async function Header() {
 
     return (
         <nav
-            className="bg-header-background text-header-text p-2 flex items-center justify-between min-h-14 w-full fixed top-0 left-0 z-10"
+            className="bg-header-background text-header-text p-2 flex items-center justify-between min-h-14 w-full z-10"
         >
             <div>
                 {user?.scope === "admin" ? <MenuButton position='header' /> : <Logo />}

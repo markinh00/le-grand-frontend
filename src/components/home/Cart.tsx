@@ -5,7 +5,7 @@ import CartFooter from "./CartFooter";
 export default async function Cart() {
     return (
         <div
-            className="w-full h-14 fixed bottom-0 right-0 md:w-[320px] md:bottom-4 md:right-4 md:h-[calc(100vh-56px-32px)]">
+            className="w-full h-14 md:w-[320px] md:h-[calc(100vh-56px-16px)] md:pt-4 md:mr-4">
             <form
                 action={""}
                 className="bg-card shadow-sm border w-full h-full md:w-[320px] md:max-w-[320px] flex md:flex-col items-center p-2 md:justify-between md:rounded-xl">

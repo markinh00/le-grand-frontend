@@ -9,7 +9,7 @@ type Props = {
 
 export default async function CategoryList(props: Props) {
     return (
-        <div className="w-full md:max-w-[calc(100%-320px-16px)] h-full">
+        <div className="w-full h-[calc(100%-56px)] overflow-y-auto">
             {props.categories.map(category => {
                 return <CategoryItem key={category} category={category} products={props.products} />
             })}
